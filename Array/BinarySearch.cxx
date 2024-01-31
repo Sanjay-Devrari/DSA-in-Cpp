@@ -7,7 +7,7 @@ int Binary(int arry[],int size,int num)
 	while(s<=e)
 	{
 		int mid=(s+e)/2;
-		if(arry[mid])
+		if(arry[mid]==num)
 		{
 			return mid;
 		}
@@ -35,5 +35,5 @@ int main()
 	int num;
 	cout<<"Enter numbre which are you find in array=";
 	cin>>num;
-	cout<<Binary(arry,size,num);
+	cout<<"Index of Your find number in Array :-\n"<<Binary(arry,size,num);
 }
